@@ -10,6 +10,7 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -18,7 +19,21 @@ export default {
   },
   methods: {
     submit() {
-      console.log(this.search);
+      this.fetchSearchResults();
+    },
+
+    async fetchSearchResults() {
+      console.log({
+        query: this.search
+      });
+      var qs = require("qs");
+      const { data } = await axios.post(
+        "http://localhost:8002/search/",
+        qs.stringify({
+          query: this.search
+        })
+      );
+      console.log(data);
     }
   }
 };
