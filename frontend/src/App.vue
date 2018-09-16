@@ -6,7 +6,6 @@
         <router-view/>
       </v-container>
     </v-content>
-    <router-view/>
   </v-app>
 </template>
 <script>
