@@ -2,7 +2,7 @@
 
 Validation helps you get validation from the world(read: twitter). You can "validate" what the world thinks (read: sentiment analysis) about a particular topic (ex: pineapple on pizza/crocs on socks/donald trump etc.) and settle arguments with real data and graphs!
 
-This was demoed in ShellHacks 2019 in Miami, FL.
+This was demoed in ShellHacks 2018 in Miami, FL.
 ## Setup
 
 Clone the repository
